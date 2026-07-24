@@ -9,9 +9,9 @@
   "lang": "tr",
   "icons": [
     {
-      "src": "assets/logo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "assets/teknologo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

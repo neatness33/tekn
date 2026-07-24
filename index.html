@@ -17,17 +17,17 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="Tekno IPTV">
-  <meta property="og:image" content="https://teknoiptv32.com/assets/hero-visual.svg">
+  <meta property="og:image" content="https://teknoiptv32.com/assets/teknologo2.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tekno IPTV - Premium TV Deneyimi">
   <meta name="twitter:description" content="Tekno IPTV, Türkiye'nin en kapsamlı IPTV platformu ile tanışın. 8000+ kanal, zengin film ve dizi arşivi.">
-  <meta name="twitter:image" content="https://teknoiptv32.com/assets/hero-visual.svg">
+  <meta name="twitter:image" content="https://teknoiptv32.com/assets/teknologo2.png">
 
   <!-- Icons & Manifest -->
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/logo.svg">
+  <link rel="icon" href="assets/teknologo2.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/teknologo2.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#0a0f1e">
 
@@ -54,13 +54,7 @@
         "url": "https://teknoiptv32.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://teknoiptv32.com/assets/logo.svg"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+90-531-699-6346",
-          "contactType": "customer support",
-          "availableLanguage": "Turkish"
+          "url": "https://teknoiptv32.com/assets/teknologo2.png"
         },
         "sameAs": [
           "https://t.me/teknoiptv1"
@@ -131,10 +125,10 @@
           },
           {
             "@type": "Question",
-            "name": "Telegram veya WhatsApp nerden ulaşabilirim?",
+            "name": "Telegram'dan nasıl ulaşabilirim?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Aşağıdaki iletişim bölümündeki bağlantıları kullanarak Telegram veya WhatsApp üzerinden ulaşabilirsiniz."
+              "text": "Aşağıdaki iletişim bölümündeki Telegram bağlantısını kullanarak bize ulaşabilirsiniz: https://t.me/teknoiptv1"
             }
           },
           {
@@ -158,8 +152,7 @@
   <header class="site-header" id="home-top">
     <div class="container header-inner">
       <a href="#home" class="logo" aria-label="Tekno IPTV ana sayfa">
-        <img src="assets/logo.svg" alt="Tekno IPTV logosu" width="40" height="40">
-        <span>Tekno IPTV</span>
+        <img src="assets/teknologo2.png" alt="Tekno IPTV" width="48" height="48">
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menüyü aç">
@@ -211,7 +204,7 @@
         </div>
 
         <div class="hero-visual">
-          <img src="assets/hero-visual.svg" alt="Tekno IPTV televizyon, tablet ve mobil cihaz görseli" width="640" height="480" fetchpriority="high">
+          <img src="assets/teknologo2.png" alt="Tekno IPTV logosu" width="480" height="480" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -328,28 +321,28 @@
       <div class="container test-inner">
         <div class="test-content">
           <p class="section-eyebrow">IPTV test yayını</p>
-          <p>Hizmeti deneyimlemek için 2 saatlik ücretsiz IPTV test yayını alabilirsiniz. Panel üzerinden anında talep oluşturun veya WhatsApp üzerinden bize yazın.</p>
+          <p>Hizmeti deneyimlemek için 2 saatlik ücretsiz IPTV test yayını alabilirsiniz. Panel üzerinden anında talep oluşturun veya Telegram üzerinden bize yazın.</p>
           <ul class="test-steps">
-            <li>Test paneline gidin veya WhatsApp ile iletişime geçin</li>
+            <li>Test paneline gidin veya Telegram ile iletişime geçin</li>
             <li>Kurulum bilgilerinizi alın</li>
             <li>Cihazınızda test yayınını başlatın</li>
           </ul>
           <div class="test-actions">
             <a href="https://teknopanelim.com/buying/test" class="btn btn-primary" rel="noopener noreferrer">Panelden Test Al</a>
-            <a href="https://api.whatsapp.com/send/?phone=905316996346&amp;text=Merhaba%2C%20IPTV%20test%20yay%C4%B1n%C4%B1%20almak%20istiyorum&amp;type=phone_number&amp;app_absent=0" class="btn btn-secondary" rel="noopener noreferrer" target="_blank">WhatsApp ile Talep Et</a>
+            <a href="https://t.me/teknoiptv1" class="btn btn-secondary" rel="noopener noreferrer" target="_blank">Telegram ile Talep Et</a>
           </div>
         </div>
         <div class="test-form-card">
           <h3>Hızlı Mesaj Gönder</h3>
-          <p class="form-note">Statik sitede form sunucuya doğrudan gönderilmez. Mesajınız WhatsApp üzerinden iletilir.</p>
-          <form id="whatsapp-form" class="contact-form" novalidate>
-            <label for="wa-name">Adınız</label>
-            <input type="text" id="wa-name" name="name" placeholder="Adınız Soyadınız" autocomplete="name">
+          <p class="form-note">Statik sitede form sunucuya doğrudan gönderilmez. Gönder butonu sizi Telegram hattımıza yönlendirir.</p>
+          <form id="telegram-form" class="contact-form" novalidate>
+            <label for="tg-name">Adınız</label>
+            <input type="text" id="tg-name" name="name" placeholder="Adınız Soyadınız" autocomplete="name">
 
-            <label for="wa-message">Mesajınız</label>
-            <textarea id="wa-message" name="message" rows="4" placeholder="IPTV test yayını veya paket hakkında mesajınız..."></textarea>
+            <label for="tg-message">Mesajınız</label>
+            <textarea id="tg-message" name="message" rows="4" placeholder="IPTV test yayını veya paket hakkında mesajınız..."></textarea>
 
-            <button type="submit" class="btn btn-primary btn-block">WhatsApp ile Gönder</button>
+            <button type="submit" class="btn btn-primary btn-block">Telegram ile Gönder</button>
           </form>
         </div>
       </div>
@@ -407,8 +400,8 @@
             <p>7/24 Telegram üzerinden teknik destek ekibimize ulaşabilirsiniz.</p>
           </details>
           <details class="faq-item">
-            <summary>Telegram veya WhatsApp nerden ulaşabilirim?</summary>
-            <p>Aşağıdaki "iletişim" bölümündeki bağlantıları kullanarak Telegram veya WhatsApp üzerinden ulaşabilirsiniz.</p>
+            <summary>Telegram'dan nasıl ulaşabilirim?</summary>
+            <p>İletişim bölümündeki Telegram bağlantısını kullanarak bize ulaşabilirsiniz: <a href="https://t.me/teknoiptv1" rel="noopener noreferrer" target="_blank">t.me/teknoiptv1</a></p>
           </details>
           <details class="faq-item">
             <summary>Ücretsiz kullanabiliyormuyuz?</summary>
@@ -421,20 +414,15 @@
     <!-- Support -->
     <section class="section section-alt" id="destek" aria-label="Müşteri desteği">
       <div class="container">
-        <div class="support-grid">
+        <div class="support-grid support-grid-3">
           <article class="support-card">
             <h3>Canlı Destek</h3>
             <p>Sayfanın sağ alt köşesindeki Tawk.to canlı destek penceresi ile anında mesaj gönderebilirsiniz.</p>
           </article>
           <article class="support-card">
             <h3>Telegram</h3>
-            <p>Üyelik bilgileri ve teknik konular için Telegram hattımızı kullanın.</p>
+            <p>Üyelik bilgileri, test yayını ve teknik konular için Telegram hattımızı kullanın.</p>
             <a href="https://t.me/teknoiptv1" class="link-arrow" rel="noopener noreferrer" target="_blank">t.me/teknoiptv1</a>
-          </article>
-          <article class="support-card">
-            <h3>WhatsApp</h3>
-            <p>Paket satın alma ve test yayını talepleri için WhatsApp hattımıza yazın.</p>
-            <a href="https://api.whatsapp.com/send/?phone=905316996346&amp;text=Merhaba+paket+almak+istiyorum&amp;type=phone_number&amp;app_absent=0" class="link-arrow" rel="noopener noreferrer" target="_blank">+90 531 699 6346</a>
           </article>
           <article class="support-card">
             <h3>Müşteri Paneli</h3>
@@ -451,16 +439,16 @@
         <div>
           <ul class="contact-list">
             <li>
-              <strong>WhatsApp:</strong>
-              <a href="https://api.whatsapp.com/send/?phone=905316996346&amp;text=Merhaba+paket+almak+istiyorum&amp;type=phone_number&amp;app_absent=0" rel="noopener noreferrer" target="_blank">+90 531 699 6346</a>
-            </li>
-            <li>
               <strong>Telegram:</strong>
               <a href="https://t.me/teknoiptv1" rel="noopener noreferrer" target="_blank">@teknoiptv1</a>
             </li>
             <li>
               <strong>Web:</strong>
               <a href="https://teknoiptv32.com/">teknoiptv32.com</a>
+            </li>
+            <li>
+              <strong>Panel:</strong>
+              <a href="https://teknopanelim.com/" rel="noopener noreferrer" target="_blank">teknopanelim.com</a>
             </li>
           </ul>
         </div>
@@ -477,8 +465,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#home" class="logo">
-          <img src="assets/logo.svg" alt="" width="36" height="36" aria-hidden="true">
-          <span>Tekno IPTV</span>
+          <img src="assets/teknologo2.png" alt="Tekno IPTV" width="48" height="48">
         </a>
         <p>Premium TV deneyimi için doğru adres</p>
       </div>
@@ -501,7 +488,7 @@
         <h4>İletişim</h4>
         <ul>
           <li><a href="https://t.me/teknoiptv1" rel="noopener noreferrer" target="_blank">Telegram</a></li>
-          <li><a href="https://api.whatsapp.com/send/?phone=905316996346&amp;text=Merhaba+paket+almak+istiyorum&amp;type=phone_number&amp;app_absent=0" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+          <li><a href="https://teknopanelim.com/" rel="noopener noreferrer" target="_blank">Müşteri Paneli</a></li>
         </ul>
       </nav>
     </div>
@@ -513,7 +500,7 @@
   <!-- Mobile sticky CTA -->
   <div class="mobile-sticky" aria-label="Hızlı işlemler">
     <a href="https://teknopanelim.com/buying/test" class="sticky-btn sticky-test" rel="noopener noreferrer">Test Al</a>
-    <a href="https://api.whatsapp.com/send/?phone=905316996346&amp;text=Merhaba+paket+almak+istiyorum&amp;type=phone_number&amp;app_absent=0" class="sticky-btn sticky-wa" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp ile iletişim">WhatsApp</a>
+    <a href="https://t.me/teknoiptv1" class="sticky-btn sticky-tg" rel="noopener noreferrer" target="_blank" aria-label="Telegram ile iletişim">Telegram</a>
   </div>
 
   <!--Start of Tawk.to Script-->

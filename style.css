@@ -174,9 +174,11 @@ a:focus-visible {
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .logo:hover {
@@ -373,16 +375,18 @@ a:focus-visible {
 
 .hero-visual {
   min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-visual img {
-  width: 100%;
-  max-width: 640px;
+  width: min(100%, 420px);
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   animation: float 6s ease-in-out infinite;
-  background: var(--surface);
+  background: #000;
 }
 
 @keyframes float {
@@ -773,6 +777,10 @@ a:focus-visible {
   gap: 1.25rem;
 }
 
+.support-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .link-arrow {
   display: inline-block;
   margin-top: 0.75rem;
@@ -925,12 +933,12 @@ a:focus-visible {
   border: 1px solid var(--border);
 }
 
-.sticky-wa {
-  background: #25d366;
+.sticky-tg {
+  background: #229ed9;
   color: #fff;
 }
 
-.sticky-wa:hover {
+.sticky-tg:hover {
   color: #fff;
 }
 
@@ -944,7 +952,8 @@ a:focus-visible {
 
   .card-grid-3,
   .package-grid,
-  .support-grid {
+  .support-grid,
+  .support-grid-3 {
     grid-template-columns: 1fr;
   }
 

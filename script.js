@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var WHATSAPP_BASE = 'https://api.whatsapp.com/send/?phone=905316996346&type=phone_number&app_absent=0';
+  var TELEGRAM_URL = 'https://t.me/teknoiptv1';
 
   /* Mobile navigation */
   var navToggle = document.querySelector('.nav-toggle');
@@ -32,29 +32,12 @@
     }, { passive: true });
   }
 
-  /* WhatsApp form — opens WhatsApp with encoded message (no URL params with user data in address bar until submit) */
-  var waForm = document.getElementById('whatsapp-form');
-  if (waForm) {
-    waForm.addEventListener('submit', function (event) {
+  /* Telegram form — opens Telegram chat */
+  var tgForm = document.getElementById('telegram-form');
+  if (tgForm) {
+    tgForm.addEventListener('submit', function (event) {
       event.preventDefault();
-
-      var nameInput = document.getElementById('wa-name');
-      var messageInput = document.getElementById('wa-message');
-      var name = nameInput && nameInput.value.trim();
-      var message = messageInput && messageInput.value.trim();
-
-      var parts = ['Merhaba'];
-      if (name) {
-        parts.push('ben ' + name + '.');
-      }
-      if (message) {
-        parts.push(message);
-      } else {
-        parts.push('IPTV test yayını hakkında bilgi almak istiyorum.');
-      }
-
-      var text = encodeURIComponent(parts.join(' '));
-      window.open(WHATSAPP_BASE + '&text=' + text, '_blank', 'noopener,noreferrer');
+      window.open(TELEGRAM_URL, '_blank', 'noopener,noreferrer');
     });
   }
 
