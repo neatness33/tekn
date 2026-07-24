@@ -266,6 +266,10 @@ a:focus-visible {
   align-items: center;
 }
 
+.main-nav a[aria-current="page"] {
+  color: var(--text);
+}
+
 .eyebrow {
   display: inline-block;
   margin: 0 0 1rem;
