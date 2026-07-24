@@ -2,14 +2,14 @@
   "name": "Tekno IPTV",
   "short_name": "Tekno IPTV",
   "description": "Tekno IPTV — IPTV satın al ve IPTV test yayını talep et.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#070b14",
   "theme_color": "#0a0f1e",
   "lang": "tr",
   "icons": [
     {
-      "src": "/assets/logo.svg",
+      "src": "assets/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

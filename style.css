@@ -170,10 +170,24 @@ a:focus-visible {
   color: var(--text);
   font-weight: 700;
   font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .logo:hover {
   color: var(--text);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
 }
 
 .main-nav ul {
@@ -183,6 +197,12 @@ a:focus-visible {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
+}
+
+.main-nav .btn-outline {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .main-nav a {
@@ -351,10 +371,18 @@ a:focus-visible {
   gap: 0.75rem;
 }
 
+.hero-visual {
+  min-height: 280px;
+}
+
 .hero-visual img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   animation: float 6s ease-in-out infinite;
+  background: var(--surface);
 }
 
 @keyframes float {
@@ -944,12 +972,26 @@ a:focus-visible {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .main-nav ul {
+    gap: 0.25rem 0.75rem;
+  }
+
+  .main-nav a {
+    font-size: 0.82rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
   }
 
   .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
     position: fixed;
     inset: var(--header-h) 0 auto 0;
     background: rgba(7, 11, 20, 0.98);
