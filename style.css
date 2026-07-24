@@ -14,7 +14,7 @@
   --border: rgba(148, 163, 184, 0.15);
   --radius: 14px;
   --radius-sm: 8px;
-  --header-h: 72px;
+  --header-h: 80px;
   --container: min(1120px, 92vw);
   --transition: 0.25s ease;
   --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
@@ -174,11 +174,12 @@ a:focus-visible {
 }
 
 .logo img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: contain;
+  background: #000;
 }
 
 .logo:hover {
